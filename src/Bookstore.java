@@ -7,13 +7,21 @@ public class Bookstore {
         if (number_of_books == 0) {
             System.out.println("N/A");
         } else {
+            String bookname = "";
+            String authorname = "";
+            long isbn;
             for (int i = 1; i <= number_of_books; i++) {
-                String book_name = scanner.nextLine();
-                String author_name = scanner.nextLine();
-                double isbn = scanner.nextDouble();
+                scanner.skip("\n");
+                bookname = scanner.nextLine();
+                authorname = scanner.nextLine();
+                isbn = scanner.nextLong();
+
+                System.out.println("------------------------");
+                System.out.println("Book Name:" + bookname);
+                System.out.println("Author Name:" + authorname);
+                System.out.println("ISBN:" + isbn);
+                System.out.println("------------------------");
             }
-
-
         }
 
     }
