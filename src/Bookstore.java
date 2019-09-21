@@ -9,13 +9,14 @@ public class Bookstore {
         } else {
             String bookname = "";
             String authorname = "";
-            long isbn;
+            long isbn = 0;
             for (int i = 1; i <= number_of_books; i++) {
                 scanner.skip("\n");
                 bookname = scanner.nextLine();
                 authorname = scanner.nextLine();
                 isbn = scanner.nextLong();
-
+            }
+            for (int i = 1; i <= number_of_books; i++) {
                 System.out.println("------------------------");
                 System.out.println("Book Name:" + bookname);
                 System.out.println("Author Name:" + authorname);
